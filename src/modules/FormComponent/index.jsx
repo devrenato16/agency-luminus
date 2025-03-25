@@ -1,5 +1,6 @@
 import {
   Button,
+  CheckIcon,
   Flex,
   InputBase,
   Paper,
@@ -58,9 +59,11 @@ function FormComponent() {
           title: "Dados enviados!",
           message: "Você será direcionado para whatsapp.",
           color: "green",
-          position: "top-right",
+          icon: <CheckIcon size={18} />,
+          position: "top-center",
           className: classes.notification,
           autoClose: 3000,
+          withCloseButton: false,
           styles: {
             title: { color: "#fff" },
             message: { color: "#fff" },
