@@ -29,7 +29,16 @@ function HeroComponent() {
         <Container size="lg">
           <div className={isMobile ? classes.innerMobile : classes.inner}>
             <div className={isMobile ? classes.imageMobile : classes.image}>
-              <Image src="/Images/pc1.svg" />
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.4,
+                  scale: { type: "spring", visualDuration: 0.9, bounce: 0.5 },
+                }}
+              >
+                <Image src="/Images/pc1.svg" />
+              </motion.div>
             </div>
             <div className={classes.content}>
               <Title className={classes.title} size={titleSize}>
