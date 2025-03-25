@@ -52,10 +52,16 @@ const ChatComponent = () => {
       return;
     }
     const templateParams = { name, email, fone, nicho };
+    emailjs.send(
+      "service_ljq4tmv",
+      "template_adp3zsg",
+      templateParams,
+      "3vjQRnQFfs1pVyLJ7"
+    );
     emailjs
       .send(
         "service_ljq4tmv",
-        "template_adp3zsg",
+        "template_oe2y4f9",
         templateParams,
         "3vjQRnQFfs1pVyLJ7"
       )
