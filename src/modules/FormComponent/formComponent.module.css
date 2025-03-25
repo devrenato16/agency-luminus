@@ -59,8 +59,7 @@
   }
   
 .notification {
-  z-index: 9999;
-  margin-top: 100px;
+  z-index: 3;
   background-color: #1a1b1e;
   color: #fff;
 }
