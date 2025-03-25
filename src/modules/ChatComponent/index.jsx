@@ -9,8 +9,8 @@ import {
 } from "@mantine/core";
 import emailjs from "emailjs-com";
 import classes from "./chatComponent.module.css";
-import { FiMessageCircle } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import { IconBrandHipchat } from "@tabler/icons-react";
 
 const ChatComponent = () => {
   const [messages, setMessages] = useState([
@@ -161,7 +161,7 @@ const ChatComponent = () => {
         className={classes.chatbotButton}
         onClick={() => setOpen(!open)}
       >
-        <FiMessageCircle size={24} />
+        <IconBrandHipchat stroke={1.5} size={35} />
       </ActionIcon>
       {open && (
         <Card className={classes.chatbotContainer} shadow="xl">
