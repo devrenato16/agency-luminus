@@ -3,6 +3,8 @@ import { Card, Container, Image, Text, Title } from "@mantine/core";
 import "@mantine/carousel/styles.css";
 import classes from "./portfolioSection.module.css";
 import { useMediaQuery } from "react-responsive";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 const PortfolioSection = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -12,6 +14,8 @@ const PortfolioSection = () => {
 
   const titleSize = isMobile ? "25px" : isTablet ? "30px" : "40px";
   const descriptionSize = isMobile ? "11px" : isTablet ? "16px" : "13px";
+
+  const autoplay = useRef(Autoplay({ delay: 7000 }));
 
   return (
     <>
@@ -33,7 +37,10 @@ const PortfolioSection = () => {
               slideSize={{ base: `${100 / slidesPerView}%` }}
               slideGap="md"
               align="start"
-              withControls
+              withControls={false}
+              plugins={[autoplay.current]}
+              onMouseEnter={autoplay.current.stop}
+              onMouseLeave={autoplay.current.reset}
             >
               {/* Slide 1 */}
               <Carousel.Slide>
@@ -98,7 +105,7 @@ const PortfolioSection = () => {
               </Carousel.Slide>
 
               {/* Slide 4 */}
-              <Carousel.Slide>
+              {/* <Carousel.Slide>
                 <Card
                   className={classes.card}
                   component="a"
@@ -116,10 +123,10 @@ const PortfolioSection = () => {
                     <Text className={classes.cardDescription}>Modelo 2023</Text>
                   </div>
                 </Card>
-              </Carousel.Slide>
+              </Carousel.Slide> */}
 
               {/* Slide 5 */}
-              <Carousel.Slide>
+              {/* <Carousel.Slide>
                 <Card
                   className={classes.card}
                   component="a"
@@ -136,10 +143,10 @@ const PortfolioSection = () => {
                     <Text className={classes.cardDescription}>Modelo 2023</Text>
                   </div>
                 </Card>
-              </Carousel.Slide>
+              </Carousel.Slide> */}
 
               {/* Slide 6 */}
-              <Carousel.Slide>
+              {/* <Carousel.Slide>
                 <Card
                   className={classes.card}
                   component="a"
@@ -156,9 +163,9 @@ const PortfolioSection = () => {
                     <Text className={classes.cardDescription}>Modelo 2023</Text>
                   </div>
                 </Card>
-              </Carousel.Slide>
+              </Carousel.Slide> */}
               {/* Slide 6 */}
-              <Carousel.Slide>
+              {/* <Carousel.Slide>
                 <Card
                   className={classes.card}
                   component="a"
@@ -175,9 +182,9 @@ const PortfolioSection = () => {
                     <Text className={classes.cardDescription}>Modelo 2023</Text>
                   </div>
                 </Card>
-              </Carousel.Slide>
+              </Carousel.Slide> */}
               {/* Slide 6 */}
-              <Carousel.Slide>
+              {/* <Carousel.Slide>
                 <Card
                   className={classes.card}
                   component="a"
@@ -194,7 +201,7 @@ const PortfolioSection = () => {
                     <Text className={classes.cardDescription}>Modelo 2023</Text>
                   </div>
                 </Card>
-              </Carousel.Slide>
+              </Carousel.Slide> */}
             </Carousel>
           </div>
         </Container>
