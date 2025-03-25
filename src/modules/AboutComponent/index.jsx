@@ -13,7 +13,7 @@ const AboutComponent = () => {
   const descriptionSize = isMobile ? "11px" : isTablet ? "16px" : "13px";
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8 }, // Estado inicial (escondido)
+    hidden: { opacity: 0, scale: 0 }, // Estado inicial (escondido)
     visible: {
       opacity: 1,
       scale: 1,
