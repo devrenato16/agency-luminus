@@ -1,0 +1,54 @@
+.header {
+    height: 70px;
+    background-image: linear-gradient(to right, rgb(61, 0, 119), rgb(40, 0, 73));
+    opacity: 95%;
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0; 
+    z-index: 1000;  
+  }
+  
+  
+  .inner {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .mainLinks {
+    margin-right: calc(var(--mantine-spacing-sm) * -1);
+  }
+  
+  .mainLink {
+    text-transform: uppercase;
+    font-size: var(--mantine-font-size-xs);
+    color: white;
+    padding: 15px var(--mantine-spacing-sm);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition:
+      border-color 100ms ease,
+      color 100ms ease;
+  
+    @mixin hover {
+      color: white;
+      text-decoration: none;
+    }
+  
+    &[data-active] {
+      color: white;
+      border-bottom-color: #7cf000;
+    }
+  }
+
+  .burger {
+    
+  }
+
+  .drawer {
+    color: #7cf000;
+  }
+
+  

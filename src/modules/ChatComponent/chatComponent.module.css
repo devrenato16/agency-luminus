@@ -1,0 +1,164 @@
+/* Botão flutuante para abrir o chat */
+.chatbotButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-bottom: 90px; /* Aumentado para evitar sobreposição no mobile */
+    color: #3c1053;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Garante que o botão esteja acima de outros elementos */
+  }
+  
+  /* Contêiner principal do chat */
+  .chatbotContainer {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    margin-bottom: 110px; /* Aumentado para evitar sobreposição no mobile */
+    z-index: 9999; /* Garante que o chat esteja acima de outros elementos */
+  }
+  
+  /* Botão de fechar o chat */
+  .chatbotClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff8b1f; /* Laranja do seu site */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Área de mensagens do chat */
+  .chatbotMessages {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 250px; /* Altura fixa */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    scrollbar-width: none; /* Remove a barra de rolagem no Firefox */
+    -ms-overflow-style: none; /* Remove a barra de rolagem no IE/Edge */
+  }
+  
+  /* Remove a barra de rolagem no Chrome/Safari */
+  .chatbotMessages::-webkit-scrollbar {
+    display: none; /* Oculta completamente a barra de rolagem */
+  }
+  
+  /* Wrapper das mensagens */
+  .userMessageWrapper,
+  .botMessageWrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  /* Mensagens do usuário */
+  .userMessageWrapper {
+    justify-content: flex-end; /* Alinha tudo à direita */
+    flex-direction: row-reverse; /* Inverte a ordem: avatar primeiro */
+  }
+  
+  .userMessage {
+    background: #6a0dad; /* Roxo claro do seu site */
+    color: white;
+    border-radius: 16px;
+    padding: 8px 12px;
+    max-width: 75%;
+    border-bottom-left-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  /* Mensagens do bot */
+  .botMessageWrapper {
+    justify-content: start; /* Alinha tudo à esquerda */
+  }
+  
+  .botMessage {
+    background: #3c1053; /* Roxo escuro do seu site */
+    color: white;
+    border-radius: 16px;
+    padding: 8px 12px;
+    max-width: 75%;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  /* Avatar nas mensagens */
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  /* Texto das mensagens */
+  .messageText {
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  /* Campo de entrada de texto */
+/* Estilo global para campos de entrada */
+.chatInput {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 12px;
+    background: white;
+    color: black;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 16px; /* Tamanho mínimo recomendado para evitar zoom */
+    line-height: 1.5;
+    touch-action: manipulation;
+  }
+  
+  /* Estilo específico para dispositivos móveis */
+  @media (max-width: 768px) {
+    .chatInput {
+      font-size: 16px; /* Garante que o tamanho da fonte seja suficiente */
+      padding: 12px; /* Aumenta o espaçamento interno para melhorar a usabilidade */
+    }
+  }
+  .chatInput:focus {
+    border-color: #ff8b1f; /* Laranja do seu site ao focar */
+  }
+  
+  /* Botão de envio */
+  .chatButton {
+    background-color: #3c1053; /* Roxo escuro do seu site */
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatButton:hover {
+    background-color: #55107a; /* Roxo mais escuro ao passar o mouse */
+  }

@@ -1,0 +1,66 @@
+.card {
+   background-color: #2a0141 ;
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+   max-height: 700px;
+   padding: 40px;
+   margin-bottom: 50px;   
+   margin-top: -50px;   
+
+ } 
+ @media (max-width: 768px) {
+  .card {
+     margin-top: 50px; 
+     
+  }
+}
+
+
+.input {
+    color: #e2e2e2;
+    background-color: #1a0028;
+    padding: 20px;
+}
+
+.label {
+    color: #e2e2e2;
+    font-size: var(--mantine-font-size-md);
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.control {
+    justify-items: flex-end;
+    color: #13005a;
+    background: #ff8b1f;
+    transition: background-color 0.3s ease;
+  
+    @media (max-width: mantine-breakpoint-sm) {
+      width: 100%;
+      
+    }
+  }
+  .control:hover {
+    background-color: #cc6300;
+    color: #340059;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .error {
+    position: absolute;
+    font-size: 12px;
+    min-height: 16px; /* Garante espaço fixo para a mensagem de erro */
+  }
+  
+.notification {
+  z-index: 9999;
+  margin-top: 100px;
+  background-color: #1a1b1e;
+  color: #fff;
+}

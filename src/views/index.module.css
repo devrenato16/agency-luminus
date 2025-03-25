@@ -1,0 +1,27 @@
+body {
+  background: #14001d;
+}
+
+/* Para alterar a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 2px; /* Largura da barra de rolagem vertical */
+  height: 4px; /* Altura da barra de rolagem horizontal */
+}
+
+
+::-webkit-scrollbar-thumb {
+  color: #14001d;
+  border-radius: 50px; 
+}
+
+
+::-webkit-scrollbar-track {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+/* Controla a largura da barra de rolagem em Firefox */
+html {
+  scrollbar-width: thin; 
+  scrollbar-color: #14001d;
+  scroll-behavior: smooth;
+}

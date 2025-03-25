@@ -1,0 +1,84 @@
+.container {
+    background: #1a0028;
+    background-position: center top; 
+    background-size: cover; 
+    height: 800px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.title {
+    color: var(--mantine-color-white);
+    margin-top: 50px;
+    line-height: 1.1;
+    position: relative; 
+    z-index: 1; 
+  
+    @media (max-width: mantine-breakpoint-sm) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    @media (max-width: mantine-breakpoint-xs) {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+}
+
+.description {
+    font-size: var(--mantine-font-size-xs);
+    text-transform: uppercase;
+    color:#8300bf;
+    letter-spacing: 0.9em;
+    position: relative ;
+}
+
+/* Estilo geral do Card */
+.card {
+  background: #00000060;
+  margin-top: 70px;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  height: 440px; 
+  border-radius: 16px; 
+  overflow: hidden; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+
+/* Estilo da imagem */
+.cardImage {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: 1; 
+}
+.cardImage:hover {
+  opacity: 0.8;
+}
+
+/* Estilo do conteúdo (título e descrição) */
+.cardContent {
+  position: relative;
+  z-index: 3; 
+  padding: 24px; 
+  color: #ffffff; 
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  opacity: 0.6;
+}

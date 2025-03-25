@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.text {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.container {
+    background-color:#14001d; /* Aplica a cor de fundo ao container principal */
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+}

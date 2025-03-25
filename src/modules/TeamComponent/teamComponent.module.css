@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+  background: linear-gradient(#110018, #240032, #240032) ;
+  border: 1px solid #71008e;
+  flex-direction: column;   
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+
+  color: var(--mantine-color-white);
+  margin-bottom: 100px;  
+  
+}
+
+.avatar {
+    border: 2px solid #8300bf;
+    position: absolute;
+    z-index: 10;
+    
+}

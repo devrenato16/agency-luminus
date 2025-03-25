@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero {  
+  position: relative;
+  background-image: linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #340059 85%), url(/Images/bg3.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: calc(var(--mantine-spacing-xl) * 5);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+}
+
+.innerMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(var(--mantine-spacing-xl) * 3);
+  padding-bottom: calc(var(--mantine-spacing-xl * 3));
+}
+
+.content {
+  max-width: 480px;
+  margin-right: calc(var(--mantine-spacing-xl) * 3);
+
+  @media (max-width: mantine-breakpoint-md) {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  color: var(--mantine-color-white);
+  margin-top: 100px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+ 
+  @media (max-width: mantine-breakpoint-sm) {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: mantine-breakpoint-xs) {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+}
+
+.description {
+  color: var(--mantine-color-white);
+  max-width: 480px;
+
+  @media (max-width: mantine-breakpoint-sm) {
+    max-width: 480px;
+    font-size: var(--mantine-font-size-sm);
+  }
+}
+
+.control {
+  margin-top: calc(var(--mantine-spacing-xl) * 1.5);
+  color: #13005a;
+  background: #ff8b1f;
+  transition: background-color 0.3s ease;
+
+  @media (max-width: mantine-breakpoint-sm) {
+    width: 100%;
+    
+  }
+}
+.control:hover {
+  background-color: #cc6300;
+  color: #340059;
+}
+
+.image {
+ width: 100%; 
+ max-width: 450px;
+ height: auto;
+ margin-top: 20px; 
+
+}
+
+.imageMobile {
+  width: 100%; 
+  max-width: 270px;
+  height: auto;
+  margin-top: 20px; 
+ 
+ }
+ 
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
