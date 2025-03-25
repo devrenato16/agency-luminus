@@ -60,12 +60,7 @@
     scrollbar-width: none; /* Remove a barra de rolagem no Firefox */
     -ms-overflow-style: none; /* Remove a barra de rolagem no IE/Edge */
   }
-  
-  /* Remove a barra de rolagem no Chrome/Safari */
-  .chatbotMessages::-webkit-scrollbar {
-    display: none; /* Oculta completamente a barra de rolagem */
-  }
-  
+    
   /* Wrapper das mensagens */
   .userMessageWrapper,
   .botMessageWrapper {
@@ -110,6 +105,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    margin: 9px;
   }
   
   /* Texto das mensagens */

@@ -39,16 +39,23 @@ function FormComponent() {
     console.log(values);
 
     const templateParams = {
+      to_email: "luminus.age@gmail.com",
       name: values.name,
       email: values.email,
       fone: values.fone,
       nicho: values.nicho,
     };
 
+    emailjs.send(
+      "service_ljq4tmv",
+      "template_adp3zsg",
+      templateParams,
+      "3vjQRnQFfs1pVyLJ7"
+    );
     emailjs
       .send(
         "service_ljq4tmv",
-        "template_adp3zsg",
+        "template_oe2y4f9",
         templateParams,
         "3vjQRnQFfs1pVyLJ7"
       )

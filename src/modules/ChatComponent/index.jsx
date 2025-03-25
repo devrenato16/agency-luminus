@@ -9,7 +9,6 @@ import {
 } from "@mantine/core";
 import emailjs from "emailjs-com";
 import classes from "./chatComponent.module.css";
-import { AiOutlineClose } from "react-icons/ai";
 import { IconBrandHipchat } from "@tabler/icons-react";
 
 const ChatComponent = () => {
@@ -173,9 +172,7 @@ const ChatComponent = () => {
               e.stopPropagation();
               setOpen(false);
             }}
-          >
-            <AiOutlineClose size={18} />
-          </ActionIcon>
+          ></ActionIcon>
           <ScrollArea h={250} className={classes.chatbotMessages}>
             {messages.map((msg, index) => (
               <div
@@ -187,7 +184,11 @@ const ChatComponent = () => {
                 }
               >
                 <Avatar
-                  src={msg.fromUser ? "/user-avatar.png" : "/bot-avatar.png"}
+                  src={
+                    msg.fromUser
+                      ? "/user-avatar.png"
+                      : "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png"
+                  }
                   alt={msg.fromUser ? "Usuário" : "Bot"}
                   size={35}
                   radius="xl"
