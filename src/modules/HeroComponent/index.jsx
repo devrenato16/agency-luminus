@@ -49,10 +49,13 @@ function HeroComponent() {
                 style={{ fontSize: descriptionSize }}
                 mt="xl"
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book .
+                A Luminus é uma agência pra quem leva o digital a sério.
+                Acreditamos que presença digital não é só estética — é
+                posicionamento. Criamos estratégias que iluminam o caminho do
+                seu negócio, com conteúdo que engaja, tráfego que converte e
+                sites que entregam. Somos determinados a entregar resultado e
+                apaixonados por propósito. Se você quer mais do que likes e
+                precisa de direção, bem-vindo à Luminus.
               </Text>
 
               <Button
